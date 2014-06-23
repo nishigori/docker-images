@@ -1,6 +1,6 @@
-# Docker images
+# Docker images nishigori/**
 
-## Requirements
+## Build Repositories
 
-* docker ~> 1.0.0
-* boot2docker ~> 1.0.0 (only MacOS)
+* [nishigori/golang](https://registry.hub.docker.com/u/nishigori/golang/)
+* [nishigori/rpmbuild](https://registry.hub.docker.com/u/nishigori/rpmbuild/)
