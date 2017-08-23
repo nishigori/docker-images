@@ -47,5 +47,5 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH
 
 # for treasure only
-RUN apk add --no-cache make py-pip
+RUN apk add --no-cache make py-pip bash jq
 RUN pip install --no-cache-dir awscli
