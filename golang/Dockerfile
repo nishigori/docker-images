@@ -12,7 +12,7 @@ RUN mkdir /gopath
 ENV GOROOT /goroot
 ENV GOPATH /gopath
 ENV CGO_ENABLED 0
-ENV PATH $PATH:$GOROOT/bin:$GOPATH:bin
+ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
 # Smoke test
 RUN cd /tmp && echo 'package main' > t.go && go test -a -i -v
