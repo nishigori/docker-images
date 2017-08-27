@@ -48,4 +48,4 @@ WORKDIR $GOPATH
 
 # for treasure only
 RUN apk add --no-cache make py-pip bash jq
-RUN pip install --no-cache-dir awscli
+RUN pip install --no-cache-dir awscli awslogs
