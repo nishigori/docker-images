@@ -43,9 +43,12 @@ RUN set -eux; \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" \
+    && chmod -R 777 "$GOPATH" \
+    && apk add --no-cache musl-dev build-base \
+    && go get github.com/rubenv/sql-migrate/... \
+    && which sql-migrate
 
-# for treasure only
 RUN apk add --no-cache make py-pip bash jq ca-certificates
 RUN pip install --no-cache-dir awscli awslogs
 
