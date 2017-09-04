@@ -2,7 +2,7 @@ FROM docker:17.06
 
 RUN apk add --no-cache \
       git curl tar \
-      openssh-client
+      openssh-client ca-certificates
 
 ENV GOLANG_VERSION 1.8.3
 
