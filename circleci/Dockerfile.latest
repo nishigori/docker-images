@@ -1,0 +1,8 @@
+FROM docker:17.06
+
+RUN apk add --no-cache \
+      git curl tar make bash jq \
+      openssh-client ca-certificates
+
+RUN apk add --no-cache py-pip \
+      && pip install --no-cache-dir docker-compose awscli awslogs
