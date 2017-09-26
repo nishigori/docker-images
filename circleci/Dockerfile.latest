@@ -1,7 +1,7 @@
 FROM docker:17.06
 
 RUN apk add --no-cache \
-      git curl tar make bash jq \
+      git curl tar make bash grep jq \
       openssh-client ca-certificates
 
 RUN apk add --no-cache py-pip \
