@@ -1,7 +1,7 @@
-FROM python:3.5-alpine
+FROM python:3.7-alpine
 
 # https://pypi.python.org/pypi/ecs-deploy/
-ENV ECS_DEPLOY_VER 1.3.1
+ENV ECS_DEPLOY_VER 1.4.3
 
 RUN set -x \
   && apk upgrade --no-cache \
