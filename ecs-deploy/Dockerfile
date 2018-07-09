@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.6-alpine
 
 # https://pypi.python.org/pypi/ecs-deploy/
 ENV ECS_DEPLOY_VER 1.4.3
